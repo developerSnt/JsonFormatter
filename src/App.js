@@ -11,10 +11,7 @@ function App() {
   const [jsonData, setJsonData] = React.useState("");
   const [error, setError] = React.useState(null);
  
-  React.useEffect(() => {
-    // This hook ensures that whenever jsonData changes, the editor gets re-rendered.
-    console.log('jsonData or error has changed');
-  }, [jsonData, error]);
+ 
   return (
     <div className="App"  >
     
@@ -23,7 +20,7 @@ function App() {
         <div className="row">
         
           <div className="col-12 col-md-5">
-            <InsertJson setJsonData={setJsonData} />
+            <InsertJson setJsonData={setJsonData} setError={setError}/>
           </div>
 
          

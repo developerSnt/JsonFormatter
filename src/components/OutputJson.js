@@ -17,7 +17,7 @@ export default function OutputJson({ jsonData, error }) {
           <Editor value={error} readOnly /> 
         </div>
       ) : (
-        <Editor value={formatJsonForDisplay(jsonData)} readOnly
+        <Editor value={formatJsonForDisplay(jsonData)}
         style={{
             fontFamily: 'monospace',
             whiteSpace: 'pre', 
