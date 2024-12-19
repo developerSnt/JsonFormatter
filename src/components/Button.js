@@ -19,7 +19,7 @@ export default function Button({ setJsonData, jsonData, setError }) {
         }
   return (
     <div style={{ backgroundColor: '#E7DDFF',height:'100%' }}>
-    <center> <button className='btn btn-outline-secondary' onClick={handleFormatJson}>Format JSON</button></center> 
+    <center> <button className='btn btn-outline-success' onClick={handleFormatJson}>Format JSON</button></center> 
      
     </div>
   );
